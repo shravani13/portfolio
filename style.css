@@ -1,0 +1,116 @@
+body{
+    padding: 3em 6em;
+    background-color: rgb(251, 255, 255);
+    font-family:Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    height: 20vh;
+    /* border: 1px solid red; */
+    margin-bottom: 3em;
+}
+header img{
+    margin-right: 2em;
+}
+nav a{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* border: 1px solid blue; */
+    /* margin-bottom:2em; */
+}
+nav hr{
+    background-color: #0077b6;
+    width: 45%;
+    height: 5px;
+    border: 0;
+    margin: 0;
+    border-radius: 1em;
+}
+nav li{
+    display: inline-block;
+    /* border: 1px solid green; */
+    color: gray;
+}
+nav li:nth-of-type(2){
+    margin-left: 1.5em;
+}
+nav ul{
+    padding-left: 0;
+}
+nav p{
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5em;
+}
+nav a{
+    color: gray;
+}
+.main-container{
+    box-shadow: 0 6px 15px 0 rgba(0,0,0,0.2), 0 8px 18px 0 rgba(0,0,0,0.19);
+    border-radius: 15px;
+    padding: 2em;
+    background-color: white;
+}
+.line{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3em;
+    color: rgb(120, 119, 119);
+}
+.main-title{
+    display: flex;
+    height: 10vh;
+}
+.main-title p{
+    font-size: 3em;
+    margin-top: 0;
+}
+.main-title img{
+    margin-right: 1em;
+}
+a{
+    text-decoration: none;
+}
+#subheading{
+    font-size: 1.5em;
+    padding: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 2.5em;
+    margin-bottom: 0.3em;
+}
+#cards{
+    display: flex;
+    padding: 1.5em;
+    /* justify-content: space-between; */
+    /* border: 1px solid blue; */
+    column-gap: 2em;
+}
+#cards section{
+    border: 0.1px solid rgb(241, 238, 238);
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2), 0 2px 3px 0 rgba(0,0,0,0.19);
+    width: 30%;
+    border-radius: 1em;
+    padding: 1.5em;
+    height: 25em;
+    
+}
+#cards section img{
+    width: 100%;
+    height: 15em;
+    /* height: 10%; */
+    /* height: auto; */
+}
+.subtext{
+    color: black;
+    font-weight:600;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    color: steelblue;
+}
+#contact a{
+    text-decoration: none;
+    color: black;
+}
