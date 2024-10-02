@@ -10,63 +10,128 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <img src="./girl-svgrepo-com.svg" alt="Girl Profile SVG">
+    <header class="d-flex mb-5">
+        <img class="me-3" src="./girl-svgrepo-com.svg" alt="Girl Profile SVG">
         <nav>
-            <p>SHRAVANI</p>
-            <hr>
-            <ul>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+            <p id="name" class="my-2 fs-4">SHRAVANI</p>
+            <hr class="rounded-4 border border-0 m-0">
+            <ul class="ps-0 mt-2">
+                <li class="d-inline-block"><a class="text-decoration-none text-secondary" href="#projects">PROJECTS</a></li>
+                <li class="d-inline-block ms-3"><a class="text-decoration-none text-secondary" href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="main-container">
-            <div class="main-title">
+        <section class="main-container bg-white rounded-4 p-4">
+            <div class="main-title d-flex">
                 <!-- <img src="./man-technologist-medium-light-skin-tone-svgrepo-com.svg" alt="Laptop working Image" srcset=""> -->
-                <p>Web Developer</p>
+                <p id="title" class="mt-0 fs-1">Web Developer</p>
             </div>
-            <p class="line">I'm from Hyderabad and working as Software Engineer</p>
-            <p class="line">Currently learning MERN stack technology</p>
-            <p class="line">Find me on <a href="https://github.com/shravani13">GitHub</a></p>    
+            <p class="line fs-5 text-body-tertiary">I'm from Hyderabad and working as Software Engineer</p>
+            <p class="line fs-5 text-body-tertiary">Currently learning MERN stack technology</p>
+            <p class="line fs-5 text-body-tertiary">Find me on <a class="text-decoration-none text-primary" href="https://github.com/shravani13">GitHub</a></p>    
         </section>
         <div id="projects">
-        <p id="subheading">Recent Projects</p>
-        <div id="cards">
-        <section>
-            <p class="subtext">Mountain Traveller Website</p>
-            <img src="./mountain-travel.png" alt="Mountain Travel"><br><br>
-            <p>The website is developed using HTML & CSS.</p>
+        <p id="subheading" class="p-2 mb-2 mt-5 fs-4">Projects</p>
+        <div id="carouselExampleDark" class="carousel slide carousel-dark">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <div id="cards" class="d-flex column-gap-5 p-2">
+        <section class="rounded-4 p-4" >
+            <p class="text-body-emphasis fw-bold">ToDo list</p>
+            <img src="./todolist.png" alt="todo-list"><br><br>
+            <p>The website is developed using Vite+React.</p>
             <hr>
-            <a href="https://github.com/shravani13/Mountain-Traveller-website.git">View Repo ></a>
+            <a class="text-decoration-none text-primary" href="https://github.com/shravani13/todolist.git">View Repo ></a>
         </section>
-        <section>
-            <p class="subtext">Blog Card</p>
+        <section class="rounded-4 p-4">
+            <p class="text-body-emphasis fw-bold">Blog Card</p>
             <img src="./blogcard.png" alt="Blog Card"><br><br>
             <p>The website is developed using Bootstrap.</p>
             <hr>
-            <a href="">View the website ></a>
+            <a class="text-decoration-none text-primary" href="https://gregarious-hummingbird-da041b.netlify.app/">View Website ></a>
         </section>
-        <section>
-            <p class="subtext">Calculator</p>
+        <section class="rounded-4 p-4">
+            <p class="text-body-emphasis fw-bold">Calculator</p>
             <img src="./calculator.png" alt="Calculator"><br><br>
             <p >The website is developed using Vanilla JS.</p>
             <hr>
-            <a href="https://github.com/shravani13/Food-card.git">View Repo ></a>
+            <a class="text-decoration-none text-primary" href="https://github.com/shravani13/Food-card.git">View Repo ></a>
         </section>
+        </div>
+        </div>
+        <div class="carousel-item">
+            <div class="d-flex column-gap-5 p-2" id="cards">
+                <section class="rounded-4 p-4" >
+                    <p class="text-body-emphasis fw-bold">Mountain Traveller Website</p>
+                    <img src="./mountain-travel.png" alt="Mountain Travel"><br><br>
+                    <p>The website is developed using HTML & CSS.</p>
+                    <hr>
+                    <a class="text-decoration-none text-primary" href="https://sunny-caramel-0b23e9.netlify.app/">View Website ></a>
+                </section>
+            <section class="rounded-4 p-4">
+                <p class="text-primary-emphasis fw-bold">PhoneBook</p>
+                <img src="./phonebook.png " alt="Blog Card"><br><br>
+                <p>The website is developed using Positions CSS.</p>
+                <hr>
+                <a class="text-primary text-decoration-none" href="">View Repo ></a>
+            </section>
+            <section class="rounded-4 p-4">
+                <p class="text-primary-emphasis fw-bold">Results Summary Card</p>
+                <img src="./results-summary.png" alt="results card"><br><br>
+                <p >The website is developed using HTML & CSS</p>
+                <hr>
+                <a class="text-primary text-decoration-none" href="https://66b8d11da5564d63632675e4--voluble-babka-83cc45.netlify.app/">View Website ></a>
+            </section>
+            </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex column-gap-5 p-2" id="cards">
+                <section class="rounded-4 p-4">
+                    <p class="text-primary-emphasis fw-bold">Recipe Page</p>
+                    <img src="./recipe.png" alt="Recipe page"><br><br>
+                    <p>The website is developed using HTML & CSS.</p>
+                    <hr>
+                    <a class="text-decoration-none text-primary" href="https://shravani13.github.io">View Website ></a>
+                </section>
+                <section class="rounded-4 p-4">
+                    <p class="text-primary-emphasis fw-bold">Food Card</p>
+                    <img src="./Screen Shot 2024-08-09 at 8.10.17 PM.png" alt="Food Card"><br><br>
+                    <p>The website is developed using HTML & CSS.</p>
+                    <hr>
+                    <a class="text-decoration-none text-primary" href="">View Repo ></a>
+                </section>
+                </div>
+                </div>
     
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
         </div>
     </main><br><br><br><br><br>
     <hr>
-    <footer>
+    <footer class="d-flex justify-content-between">
         <p>&copy; 2024 Shravani S</p>
         <div id="contact">
-            <p>CONTACT</p>
-            <a href="mailto:sriramoju.shravani@gmail.com">Email me at sriramoju.shravani13@gmail.com</a>
+            <p class="text-primary">CONTACT</p>
+            <a  class="text-decoration-none text-black" href="mailto:sriramoju.shravani@gmail.com">Email: sriramoju.shravani13@gmail.com</a>
         </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
